@@ -6,7 +6,7 @@ Instrumentation.
 
 This crate maintains a [changelog].
 
-[changelog]: https://github.com/jogru0/<NAME>/blob/main/CHANGELOG.md
+[changelog]: https://github.com/jogru0/timbal/blob/main/CHANGELOG.md
 
 ## License
 

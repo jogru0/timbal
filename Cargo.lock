@@ -59,7 +59,7 @@ checksum = "3bf63baf9f5039dadc247375c29eb13706706cfde997d0330d05aa63a77d8820"
 
 [[package]]
 name = "timbal"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "derive_more",
  "thousands",
