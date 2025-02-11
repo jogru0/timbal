@@ -2,5 +2,32 @@
 name = "timbal"
 version = "0.1.0"
 edition = "2021"
+authors = ["Jonathan Gruner <jogru0@gmail.com>"]
+description = "Instrumentations for functions, and more."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/jogru0/timbal"
+readme = "README.md"
+keywords = ["instrumentation", "profiling", "performance", "throughput", "rdtsc"]
+categories = ["development-tools::profiling"]
+exclude = [".vscode"]
 
 [dependencies]
+derive_more = { version = "2.0.1", features = ["add", "sum", "not"] }
+thousands = "0.2.0"
+
+[features]
+instrument-basic = []
+instrument-off = []
+instrument-main = []
+
+[[test]]
+name = "instrument-main"
+required-features = ["instrument-main"]
+
+[[test]]
+name = "instrument-off"
+required-features = ["instrument-off"]
+
+[[test]]
+name = "instrument-basic"
+required-features = ["instrument-basic"]
